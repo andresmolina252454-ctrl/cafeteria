@@ -1,0 +1,27 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block title %}Historia{% endblock %}
+
+{% block content %}
+<section class="page-section about-heading">
+  <div class="container">
+    <img class="img-fluid rounded about-heading-img mb-3 mb-lg-0" src="{% static 'core/img/about.jpg' %}" alt="">
+    <div class="about-heading-content">
+      <div class="row">
+        <div class="col-xl-9 col-lg-10 mx-auto">
+          <div class="bg-faded rounded p-5">
+            <h2 class="section-heading mb-4">
+              <span class="section-heading-upper">Pasión y Tradición Cafetera</span>
+              <span class="section-heading-lower">Nuestra Historia</span>
+            </h2>
+            <p>Fundada con el propósito de rendir homenaje al verdadero arte del café de especialidad, <strong>Andrés Molina Coffee</strong> nació como una propuesta enfocada en la excelencia del grano, la frescura del tostado y el amor por los detalles.</p>
+            <p>Lo que comenzó como una búsqueda apasionada por los mejores cultivos y perfiles de origen, rápidamente se convirtió en un espacio acogedor pensado para conectar personas. Cada taza que servimos combina técnicas artesanales con aromas memorables, garantizando una experiencia única en cada visita.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}
