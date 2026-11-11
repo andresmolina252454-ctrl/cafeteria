@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'blog',
     'social',
     'pages',
+'contact.apps.ContactConfig',
 ]
 
 MIDDLEWARE = [
@@ -130,3 +131,13 @@ MEDIA_URL = '/media/'
 
 # Path where media is stored
 MEDIA_ROOT = BASE_DIR / 'media'
+
+# Configuración del servidor de correo SMTP (Mailtrap)
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'sandbox.smtp.mailtrap.io'
+EMAIL_HOST_USER = 'TU_USER_DE_MAILTRAP'
+EMAIL_HOST_PASSWORD = 'TU_PASSWORD_DE_MAILTRAP'
+EMAIL_PORT = '2525'
+EMAIL_USE_TLS = True
+# Muestra los correos de send_mail directamente en la consola/terminal
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
